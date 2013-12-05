@@ -24,7 +24,6 @@ body {
 
 .sequencer {
     width: 800px;
-    height: 210px;
     background: rgba(255,255,255,.5);
     position: absolute;
     left: -webkit-calc(50% - 400px);
@@ -52,14 +51,14 @@ body {
 .sequence {
     margin: 5px;
     background: rgba(255,255,255,.5);
-    height: 24px;
+    height: 44px;
 }
 
 .note {
     display: inline-block;
     margin: 2px;
     width: 20px;
-    height: 20px;
+    height: 40px;
     background: grey;
 }
 
@@ -69,18 +68,12 @@ body {
 }
 
 .sequence .note.on {
-    display: inline-block;
-    margin: 2px;
-    width: 20px;
-    height: 20px;
-    background: yellow;
+    background: #00ECFD;
+    box-shadow: 0px 0px 20px #00ECFD;
 }
 
-
 .sequence .note.playing {
-    display: inline-block;
-    margin: 2px;
-    width: 20px;
-    height: 20px;
-    background: red;
+
+    background: #00FE00;
+    box-shadow: 0px 0px 20px #00FE00;
 }
