@@ -3,7 +3,7 @@
     "main": "index.html",
     "window": {
         "title": "Shodan",
-        "toolbar": true,
+        "toolbar": false,
         "frame": true,
         "width": 850,
         "height": 500,
