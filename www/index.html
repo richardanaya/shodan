@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shodan</title>
+    <link rel="stylesheet" type="text/css" href="shodan.css">
+    <script src="lib/jquery.js"></script>
+    <script src="lib/howler.min.js"></script>
+    <script src="js/Song.js"></script>
+    <script src="js/Shodan.js"></script>
+</head>
+<body>
+<div class="play"></div>
+<div class="pause"></div>
+<div class="sequencer">
+</div>
+</body>
+<script>
+    var shodan = new Shodan();
+    shodan.loadSong(new Song());
+</script>
+</html>
