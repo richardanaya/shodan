@@ -1,32 +1,50 @@
 body {
     height: 200px;
-    background-image: url('images/grey.jpg');
+    background-image: url('images/anim.gif');
     background-size: cover;
+}
+
+.title {
+    width: 400;
+    background: black;
+    color: white;
+    position: absolute;
+    left: -webkit-calc(50% + 130px);
+    top: 0px;
+    font-size: 64px;
+    -webkit-app-region: drag;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
 }
 
 .sequencer {
     width: 800px;
-    height: 480px;
+    height: 210px;
     background: rgba(255,255,255,.5);
     position: absolute;
     left: -webkit-calc(50% - 400px);
-    top: 100px;
+    top: 70px;
 }
 
 .play {
     position: absolute;
     left: -webkit-calc(50% - 400px);
-    top: 25px;
-    background: green;
+    top: 10px;
+    background: url(images/play.png);
     width: 50px;
     height: 50px;
 }
 
 .pause {
     position: absolute;
-    left: -webkit-calc(50% - 265px);
-    top: 25px;
-    background: blue;
+    left: -webkit-calc(50% - 330px);
+    top: 10px;
+    background: url(images/pause.png);
     width: 50px;
     height: 50px;
 }
@@ -45,7 +63,12 @@ body {
     background: grey;
 }
 
-.note.on {
+.sequence .note:nth-child(8n-7)
+{
+    background: black;
+}
+
+.sequence .note.on {
     display: inline-block;
     margin: 2px;
     width: 20px;
@@ -53,7 +76,8 @@ body {
     background: yellow;
 }
 
-.note.playing {
+
+.sequence .note.playing {
     display: inline-block;
     margin: 2px;
     width: 20px;

@@ -1,0 +1,13 @@
+{
+    "name": "Shodan",
+    "main": "index.html",
+    "window": {
+        "title": "Shodan",
+        "toolbar": false,
+        "frame": false,
+        "width": 850,
+        "height": 500,
+        "position": "center",
+        "resizable": false
+    }
+}
