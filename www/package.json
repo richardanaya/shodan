@@ -8,6 +8,7 @@
         "width": 850,
         "height": 500,
         "position": "center",
-        "resizable": false
+        "resizable": false,
+        "icon":"shodan.png"
     }
 }
